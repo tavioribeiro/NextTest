@@ -34,7 +34,7 @@
 //import './App.css';
 //import './style.css';
 //import './Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css';
-import Image from 'next/image'
+import Image from 'next/image';
 import Head from 'next/head';
 
 
@@ -45,13 +45,13 @@ import { useEffect } from 'react';
 import { stockData } from "../public/data.js";
 import axios from 'axios';
 
-import pic from "../public/assets/a.svg"
-import pic1 from "../public/assets/statistics.png"
+import pic from "../public/assets/a.svg";
+import pic1 from "../public/assets/statistics.png";
 
 
 //==============================
 import { ChakraProvider } from "@chakra-ui/react"
-import { Fade, ScaleFade, Slide, SlideFade, Box, Button, useDisclosure, Collapse} from "@chakra-ui/react"
+import { Fade, ScaleFade, Slide, SlideFade, Box, Button, useDisclosure, Collapse} from "@chakra-ui/react";
 
 
 //==============================
@@ -63,15 +63,6 @@ import { Fade, ScaleFade, Slide, SlideFade, Box, Button, useDisclosure, Collapse
 
 
 
-const Page = (props) => (
-  <div>
-    <Head>
-      <link rel="shortcut icon" href={pic1} />
-      <title>Stock Test</title>
-    </Head>
-    // Other layout/components
-  </div>
-);
 
 function App()
 {
@@ -82,7 +73,6 @@ function App()
   var [hey, setCompany] = useState(niuEmpresa);
   var [isLoggedIn, setIsLoggedIn] = useState(0);
   var [resultado, setResultado] = useState([]);  
-
 
 
 
@@ -296,6 +286,15 @@ useEffect(() => {
   
 
   return(
+    <>
+    <Head>
+      <meta charset="utf-8" />
+        <title>Stock Test</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        
+        <link rel="icon" href="./assets/statistics.png" />
+      </Head>
+
     <div className="App-header">
       <div className="App">
         <div class="parent">
@@ -303,7 +302,7 @@ useEffect(() => {
             <h1 className="h11">STOCK TEST</h1>
           </div>
           <div class="div2">
-            <Image className="imageHeader" src={pic} alt="testing" width="60px" height="60px" />
+            <img className="imageHeader" src="./assets/a.svg" alt="testing" width="60px" height="60px" />
           </div>
         </div>
       
@@ -382,6 +381,8 @@ useEffect(() => {
       </div>
     
     </div>
+
+    </>
   );
 }
 
