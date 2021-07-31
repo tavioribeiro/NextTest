@@ -35,6 +35,7 @@
 //import './style.css';
 //import './Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css';
 import Image from 'next/image'
+import Head from 'next/head';
 
 
 
@@ -45,6 +46,7 @@ import { stockData } from "../public/data.js";
 import axios from 'axios';
 
 import pic from "../public/assets/a.svg"
+import pic1 from "../public/assets/statistics.png"
 
 
 //==============================
@@ -59,6 +61,17 @@ import { Fade, ScaleFade, Slide, SlideFade, Box, Button, useDisclosure, Collapse
 
 //var tempEmpresa;
 
+
+
+const Page = (props) => (
+  <div>
+    <Head>
+      <link rel="shortcut icon" href={pic1} />
+      <title>Stock Test</title>
+    </Head>
+    // Other layout/components
+  </div>
+);
 
 function App()
 {
