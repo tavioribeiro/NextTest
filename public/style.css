@@ -16,7 +16,8 @@
   border-radius: 25px;
   border: 2px solid rgba(195, 255, 55, 0.4);
   font-family: 'Poppins', sans-serif;
-  min-width: 410px;
+  /*min-width: 410px;*/
+  max-width: 95%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
