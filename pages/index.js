@@ -105,7 +105,7 @@ useEffect(() => {
       setResultado(response.data);
     })
 
-  }, 900000)
+  }, 10000)
   return () => clearInterval(intervalId); //This is important
 },[])
 
