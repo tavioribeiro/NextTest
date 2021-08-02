@@ -1,4 +1,6 @@
-@import url("./Bootstrap/bootstrap.min.css");
+//@import url("./Bootstrap/bootstrap.min.css");
+@import url("./bootstrap/css/bootstrap.min.css");
+//@import url("./bootstrap/bootstrap.min.css");
 //@import url("./UIKit/uikit-3.7.1/css/uikit-rtl.min.css");
 @import url("./App.css");
 
@@ -25,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -36,6 +39,21 @@
     padding-top: 50px;
     padding-bottom: 50px;
     
+}
+
+
+.box
+{
+  color: black;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    padding: 5%;
+    border-radius: 15px;
+
 }
 
 .btn, .btn-outline-primary, .btn-sm
@@ -51,6 +69,7 @@
 .btn:hover, .btn-outline-primary:hover, .btn-sm:hover
 {
     //border-radius: 3px;
+    border-radius: 25px;
     color: #244975;
     background-color: rgba(195, 255, 55, 01);
     outline: none;
@@ -61,6 +80,18 @@
 .btn:focus, .btn-outline-primary:focus, .btn-sm:focus
 {
     //border-radius: 3px;
+    border-radius: 25px;
+    color: rgba(195, 255, 55, 01);
+    background-color: #244975;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 2px rgba(195, 255, 55, 0.9);
+}
+
+.btn:focus:active, .btn-outline-primary:focus:active, .btn-sm:focus:active
+{
+    //border-radius: 3px;
+    border-radius: 25px;
     color: rgba(195, 255, 55, 01);
     background-color: #244975;
     outline: none;

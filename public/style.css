@@ -1,11 +1,6 @@
-
-
-@import url("./bootstrap.min.css");
+@import url("./bootstrap/css/bootstrap.min.css");
 @import url("./App.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-
-
 .App {
   font-size: 12px;
   background: rgba(255, 255, 255, 0.25);
@@ -16,8 +11,7 @@
   border-radius: 25px;
   border: 2px solid rgba(195, 255, 55, 0.4);
   font-family: 'Poppins', sans-serif;
-  /*min-width: 410px;*/
-  max-width: 95%;
+  min-width: 410px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -41,18 +35,21 @@
   padding-bottom: 50px;
 }
 
-
-.box
-{
+.box {
   color: black;
-    max-width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7);
-
-    padding: 5%;
-    border-radius: 15px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5%;
+  border-radius: 15px;
 }
 
 .btn, .btn-outline-primary, .btn-sm {
@@ -65,6 +62,7 @@
 }
 
 .btn:hover, .btn-outline-primary:hover, .btn-sm:hover {
+  border-radius: 25px;
   color: #244975;
   background-color: #c3ff37;
   outline: none;
@@ -73,6 +71,17 @@
 }
 
 .btn:focus, .btn-outline-primary:focus, .btn-sm:focus {
+  border-radius: 25px;
+  color: #c3ff37;
+  background-color: #244975;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 0 0 2px rgba(195, 255, 55, 0.9);
+          box-shadow: 0 0 0 2px rgba(195, 255, 55, 0.9);
+}
+
+.btn:focus:active, .btn-outline-primary:focus:active, .btn-sm:focus:active {
+  border-radius: 25px;
   color: #c3ff37;
   background-color: #244975;
   outline: none;
@@ -181,7 +190,7 @@
 .parent2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr); /*[3]*/
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
