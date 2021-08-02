@@ -36,6 +36,7 @@
 //import './Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import Head from 'next/head';
+import Link from 'next/link';
 
 
 
@@ -374,9 +375,30 @@ useEffect(() => {
               </Collapse>
           </ChakraProvider>
             
-        
-      
-       
+          <br/>
+          <br/>
+
+{/*
+            <Link href="/sobre">
+                <a>SOBRE</a>
+            </Link>
+*/}
+          <form action="/sobre">
+            <input type="submit" value="Sobre" className="btn btn-outline-primary btn-sm" />
+        </form>
+              
+
+        <br/>
+
+        <Link
+                href="/sobre"
+                passHref>
+                <Button
+                className="btn btn-outline-primary btn-sm"
+                component="a">
+                Sobre (Rápido)
+                </Button>
+            </Link>
 
       </div>
     
